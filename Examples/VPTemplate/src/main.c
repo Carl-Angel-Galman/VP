@@ -34,6 +34,8 @@
 
 #include "GlobalObjects.h"
 
+//#include "StackMonitor.h"
+
 
 /***** PRIVATE CONSTANTS *****************************************************/
 
@@ -54,6 +56,37 @@ static Scheduler gScheduler;            // Global Scheduler instance
 
 /***** PUBLIC FUNCTIONS ******************************************************/
 
+extern uint32_t _sstack;
+extern uint32_t _estack;
+
+#define STACK_MAGIC_PATTERN 0xDEADBEEF
+
+void StackMonitor_Check(void) {
+    uint32_t *canaryPtr = (uint32_t*)&_sstack;
+
+    //check if the
+    if (*canaryPtr != STACK_MAGIC_PATTERN) {
+
+
+        Error_Handler();
+    }
+}
+
+uint32_t StackMonitor_GetUsage(void) {
+    uint32_t *searchPtr = (uint32_t*)&_sstack;
+    uint32_t freeBytes = 0;
+
+    /* 2. High-Watermark Berechnung */
+    /* Suche von unten nach oben, wie viele Muster noch unberührt sind */
+    while (searchPtr < (uint32_t*)&_estack && *searchPtr == STACK_MAGIC_PATTERN) {
+        freeBytes += 4;
+        searchPtr++;
+    }
+
+    /* Rückgabe des verbrauchten Speichers in Byte (Integer-Arithmetik) */
+    uint32_t totalSize = (uint32_t)&_estack - (uint32_t)&_sstack;
+    return (totalSize - freeBytes);
+}
 
 /**
  * @brief Main function of System
@@ -75,66 +108,12 @@ int main(void)
     int globalCounter = 0;
     uint8_t left = 0;
 
+    StackMonitor_Check();
+
     while (1)
     {
         // Read to buttons
-        Button_Status_t but1 = buttonGetButtonStatus(BTN_SW1);
-        Button_Status_t but2 = buttonGetButtonStatus(BTN_SW2);
-        Button_Status_t but3 = buttonGetButtonStatus(BTN_B1);
 
-        // Read the POT1 input from ADC
-        int adcValue = adcReadChannel(ADC_INPUT0);
-
-        // If SW1 is pressed, print some debug message on the terminal
-        if (but1 == BUTTON_PRESSED)
-        {
-            // Toggle all LEDs to the their functionality (Toggle frequency depends on HAL_Delay at end of loop)
-            ledToggleLED(LED0);
-            HAL_Delay(25);
-            ledToggleLED(LED1);
-            HAL_Delay(25);
-            ledToggleLED(LED2);
-            HAL_Delay(25);
-            ledToggleLED(LED3);
-            HAL_Delay(25);
-            ledToggleLED(LED4);
-            HAL_Delay(25);
-        }
-
-        // If SW2 is pressed, print the ADC digit value on the terminal
-        if (but2 == BUTTON_PRESSED)
-        {
-        	HAL_GPIO_WritePin(BEEP_GPIO_PORT, BEEP_PIN, GPIO_PIN_RESET);
-        }
-        else
-        {
-        	HAL_GPIO_WritePin(BEEP_GPIO_PORT, BEEP_PIN, GPIO_PIN_SET);
-        }
-
-        if (but3 == BUTTON_PRESSED)
-        {
-        	outputLogf("ADC Val: %d\n\r", adcValue);
-        }
-
-        globalCounter++;
-        if (globalCounter > 99)
-        {
-            globalCounter = 0;
-        }
-
-        if (left == 1)
-        {
-            displayShowDigit(LEFT_DISPLAY, (globalCounter / 10));
-        }
-        else
-        {
-            displayShowDigit(RIGHT_DISPLAY, (globalCounter % 10));
-        }
-
-        left = !left;
-
-        // Remove this HAL_Delay as soon as there is a Scheduler used
-        HAL_Delay(25);
     }
 }
 

@@ -50,7 +50,7 @@ Default_Handler:
 .type g_pfnVectors, %object
 .global g_pfnVectors
 g_pfnVectors:
-    .word _initial_stack_pointer
+    //.word _initial_stack_pointer
 	.word Reset_Handler
 	.word NMI_Handler
 	.word HardFault_Handler

@@ -1,0 +1,1534 @@
+08:25:06 **** Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find end_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:41:48 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find end_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:42:00 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _end_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:42:28 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      vectors.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _end_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:06:41 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _end_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:08:53 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _end_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:11:03 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s:78: Error: garbage following instruction -- `str r0,r[2]'
+make: *** [Makefile:154: obj/startup.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:11:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s:78: Error: garbage following instruction -- `str r0,r[2]'
+make: *** [Makefile:154: obj/startup.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:11:48 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:76:13: warning: unused variable 'left' [-Wunused-variable]
+   76 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:75:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   75 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:11:59 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:12:29 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:12:42 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:13:47 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:14:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:15:27 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _start_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:16:22 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _start_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:16:27 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _start_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:16:30 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _start_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:17:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _start_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:17:50 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _start_of_stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:19:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:19:50 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:19:57 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _stack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:08 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:39 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:40 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:20:49 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:21:07 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:21:21 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: cannot find _sstack: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:174: build/auth.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+09:21:30 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      auth.elf
+  OBJCOPY auth.bin
+09:25:42 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+09:27:11 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:00:42 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+10:00:45 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:01:58 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+10:02:07 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:02:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:02:33 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+10:02:45 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:03:42 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:06:35 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+10:06:37 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:06:39 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:09:07 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:09:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:09:14 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:09:18 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:09:27 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:28 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+10:10:31 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+14:46:31 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+14:47:05 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+14:54:11 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/App.ld:52: syntax error
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:55:13 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/App.ld:149 cannot move location counter backwards (from 400181f4 to 400171f4)
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:06:05 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:149 cannot move location counter backwards (from 200001f4 to 1ffffff4)
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:174: build/auth.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:06:20 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      auth.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:149 cannot move location counter backwards (from 200001f4 to 1ffffff4)
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:174: build/auth.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:06:25 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      auth.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:149 cannot move location counter backwards (from 200001f4 to 1ffffff4)
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:174: build/auth.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:06:38 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      auth.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:149 cannot move location counter backwards (from 200001f4 to 1ffffff4)
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:174: build/auth.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:06:46 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      auth.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:200: warning: redeclaration of memory region `RAM'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:202: warning: redeclaration of memory region `FLASH'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:362: warning: redeclaration of memory region `RAM'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld:linker/Auth.ld:364: warning: redeclaration of memory region `FLASH'
+  OBJCOPY auth.bin
+15:07:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:10:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:10:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:10:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:10:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:05 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:19 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:33 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:37 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:13:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:13:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:13:30 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:13:39 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:20:21 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:77:(.text.Reset_Handler+0x60): undefined reference to `_end_of_stack'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: /home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:78:(.text.Reset_Handler+0x64): undefined reference to `_start_of_stack'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:20:27 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:77:(.text.Reset_Handler+0x60): undefined reference to `_end_of_stack'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: /home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:78:(.text.Reset_Handler+0x64): undefined reference to `_start_of_stack'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:20:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:77:(.text.Reset_Handler+0x60): undefined reference to `_end_of_stack'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: /home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:78:(.text.Reset_Handler+0x64): undefined reference to `_start_of_stack'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:20:56 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:77:(.text.Reset_Handler+0x60): undefined reference to `_end_of_stack'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: /home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:78:(.text.Reset_Handler+0x64): undefined reference to `_start_of_stack'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:22:01 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:77:(.text.Reset_Handler+0x60): undefined reference to `_end_of_stack'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: /home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:78:(.text.Reset_Handler+0x64): undefined reference to `_start_of_stack'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:22:19 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:77:(.text.Reset_Handler+0x60): undefined reference to `_estack'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: /home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:78:(.text.Reset_Handler+0x64): undefined reference to `_sstack'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:22:39 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+15:22:44 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:22:47 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:28:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:28:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:02 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:04 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:14 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:16 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:34:13 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:34:17 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:34:54 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:34:58 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:35:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:100:(.text.Reset_Handler+0x70): undefined reference to `_initial_stack_pointer'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:35:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/startup.o: in function `.loopFillStack':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/startup.s:100:(.text.Reset_Handler+0x70): undefined reference to `_initial_stack_pointer'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:35:36 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+15:35:38 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:35:54 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+15:36:38 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+15:36:42 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:46 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:07:22 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:80:13: warning: unused variable 'left' [-Wunused-variable]
+   80 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:79:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   79 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:77:12: warning: unused variable 'free_bytes' [-Wunused-variable]
+   77 |     size_t free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/main.o: in function `main':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/main.c:77:(.text.main+0x18): undefined reference to `GetFreeBytes'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: (GetFreeBytes): Unknown destination type (ARM/Thumb) in obj/main.o
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/main.c:77:(.text.main+0x18): dangerous relocation: unsupported relocation
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:07:50 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/main.o: in function `main':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/main.c:77:(.text.main+0x18): undefined reference to `GetFreeBytes'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: (GetFreeBytes): Unknown destination type (ARM/Thumb) in obj/main.o
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/main.c:77:(.text.main+0x18): dangerous relocation: unsupported relocation
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:08:36 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/main.o: in function `main':
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/main.c:77:(.text.main+0x18): undefined reference to `GetFreeBytes'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: (GetFreeBytes): Unknown destination type (ARM/Thumb) in obj/main.o
+/home/kali/ProgrammEntwurf/Examples/VPTemplate//src/main.c:77:(.text.main+0x18): dangerous relocation: unsupported relocation
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:170: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:17:24 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+In file included from src/StackMonitor.c:8:
+src/StackMonitor.h:12:1: error: unknown type name 'size_t'
+   12 | size_t GetFreeBytes(void);
+      | ^~~~~~
+src/StackMonitor.h:1:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+  +++ |+#include <stddef.h>
+    1 | /*
+src/StackMonitor.c:11:8: error: unknown type name 'uint32_t'
+   11 | extern uint32_t _estack;
+      |        ^~~~~~~~
+src/StackMonitor.c:9:1: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+    8 | #include "StackMonitor.h"
+  +++ |+#include <stdint.h>
+    9 | 
+src/StackMonitor.c:13:8: error: unknown type name 'uint32_t'
+   13 | extern uint32_t _sstack;
+      |        ^~~~~~~~
+src/StackMonitor.c:13:8: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:15:8: error: unknown type name 'uint32_t'
+   15 | extern uint32_t _initial_stack_pointer;
+      |        ^~~~~~~~
+src/StackMonitor.c:15:8: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:24:1: error: unknown type name 'size_t'
+   24 | size_t GetFreeBytes(void)
+      | ^~~~~~
+src/StackMonitor.c:9:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+    8 | #include "StackMonitor.h"
+  +++ |+#include <stddef.h>
+    9 | 
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:26:5: error: unknown type name 'uint32_t'
+   26 |     uint32_t *p = &_estack;
+      |     ^~~~~~~~
+src/StackMonitor.c:26:5: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:28:5: error: unknown type name 'uint32_t'
+   28 |     uint32_t *end = &_sstack;
+      |     ^~~~~~~~
+src/StackMonitor.c:28:5: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:34:13: error: 'size_t' undeclared (first use in this function)
+   34 |     return (size_t)((uint8_t*)end - (uint8_t*)p);
+      |             ^~~~~~
+src/StackMonitor.c:34:13: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+src/StackMonitor.c:34:13: note: each undeclared identifier is reported only once for each function it appears in
+src/StackMonitor.c:34:22: error: 'uint8_t' undeclared (first use in this function)
+   34 |     return (size_t)((uint8_t*)end - (uint8_t*)p);
+      |                      ^~~~~~~
+src/StackMonitor.c:34:22: note: 'uint8_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:34:30: error: expected expression before ')' token
+   34 |     return (size_t)((uint8_t*)end - (uint8_t*)p);
+      |                              ^
+src/StackMonitor.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+   35 | }
+      | ^
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:18:23 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:80:13: warning: unused variable 'left' [-Wunused-variable]
+   80 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:79:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   79 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:77:12: warning: unused variable 'free_bytes' [-Wunused-variable]
+   77 |     size_t free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~
+  CC      StackMonitor.o
+In file included from src/StackMonitor.c:8:
+src/StackMonitor.h:14:1: error: unknown type name 'uint32_t'
+   14 | uint32_t GetFreeBytes(void);
+      | ^~~~~~~~
+src/StackMonitor.h:12:1: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+   11 | #include "Util/Global.h"
+  +++ |+#include <stdint.h>
+   12 | 
+src/StackMonitor.c:11:8: error: unknown type name 'uint32_t'
+   11 | extern uint32_t _estack;
+      |        ^~~~~~~~
+src/StackMonitor.c:9:1: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+    8 | #include "StackMonitor.h"
+  +++ |+#include <stdint.h>
+    9 | 
+src/StackMonitor.c:13:8: error: unknown type name 'uint32_t'
+   13 | extern uint32_t _sstack;
+      |        ^~~~~~~~
+src/StackMonitor.c:13:8: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:15:8: error: unknown type name 'uint32_t'
+   15 | extern uint32_t _initial_stack_pointer;
+      |        ^~~~~~~~
+src/StackMonitor.c:15:8: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:24:1: error: unknown type name 'size_t'
+   24 | size_t GetFreeBytes(void)
+      | ^~~~~~
+src/StackMonitor.c:9:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+    8 | #include "StackMonitor.h"
+  +++ |+#include <stddef.h>
+    9 | 
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:26:5: error: unknown type name 'uint32_t'
+   26 |     uint32_t *p = &_estack;
+      |     ^~~~~~~~
+src/StackMonitor.c:26:5: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:28:5: error: unknown type name 'uint32_t'
+   28 |     uint32_t *end = &_sstack;
+      |     ^~~~~~~~
+src/StackMonitor.c:28:5: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:34:13: error: 'size_t' undeclared (first use in this function)
+   34 |     return (size_t)((uint8_t*)end - (uint8_t*)p);
+      |             ^~~~~~
+src/StackMonitor.c:34:13: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+src/StackMonitor.c:34:13: note: each undeclared identifier is reported only once for each function it appears in
+src/StackMonitor.c:34:22: error: 'uint8_t' undeclared (first use in this function)
+   34 |     return (size_t)((uint8_t*)end - (uint8_t*)p);
+      |                      ^~~~~~~
+src/StackMonitor.c:34:22: note: 'uint8_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:34:30: error: expected expression before ')' token
+   34 |     return (size_t)((uint8_t*)end - (uint8_t*)p);
+      |                              ^
+src/StackMonitor.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+   35 | }
+      | ^
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:18:47 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+In file included from src/StackMonitor.c:8:
+src/StackMonitor.h:14:1: error: unknown type name 'uint32_t'
+   14 | uint32_t GetFreeBytes(void);
+      | ^~~~~~~~
+src/StackMonitor.h:12:1: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+   11 | #include "Util/Global.h"
+  +++ |+#include <stdint.h>
+   12 | 
+src/StackMonitor.c:11:8: error: unknown type name 'uint32_t'
+   11 | extern uint32_t _estack;
+      |        ^~~~~~~~
+src/StackMonitor.c:9:1: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+    8 | #include "StackMonitor.h"
+  +++ |+#include <stdint.h>
+    9 | 
+src/StackMonitor.c:13:8: error: unknown type name 'uint32_t'
+   13 | extern uint32_t _sstack;
+      |        ^~~~~~~~
+src/StackMonitor.c:13:8: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:15:8: error: unknown type name 'uint32_t'
+   15 | extern uint32_t _initial_stack_pointer;
+      |        ^~~~~~~~
+src/StackMonitor.c:15:8: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:25:2: error: return type defaults to 'int' [-Wimplicit-int]
+   25 |  GetFreeBytes(void)
+      |  ^~~~~~~~~~~~
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:27:5: error: unknown type name 'uint32_t'
+   27 |     uint32_t *p = &_estack;
+      |     ^~~~~~~~
+src/StackMonitor.c:27:5: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:29:5: error: unknown type name 'uint32_t'
+   29 |     uint32_t *end = &_sstack;
+      |     ^~~~~~~~
+src/StackMonitor.c:29:5: note: 'uint32_t' is defined in header '<stdint.h>'; this is probably fixable by adding '#include <stdint.h>'
+src/StackMonitor.c:35:14: error: 'uint32_' undeclared (first use in this function)
+   35 |     return ((uint32_*)end - (uint32_t*)p);
+      |              ^~~~~~~
+src/StackMonitor.c:35:14: note: each undeclared identifier is reported only once for each function it appears in
+src/StackMonitor.c:35:22: error: expected expression before ')' token
+   35 |     return ((uint32_*)end - (uint32_t*)p);
+      |                      ^
+src/StackMonitor.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+   36 | }
+      | ^
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:19:10 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:80:13: warning: unused variable 'left' [-Wunused-variable]
+   80 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:79:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   79 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:77:12: warning: unused variable 'free_bytes' [-Wunused-variable]
+   77 |     size_t free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~
+  CC      StackMonitor.o
+src/StackMonitor.c:25:2: error: return type defaults to 'int' [-Wimplicit-int]
+   25 |  GetFreeBytes(void)
+      |  ^~~~~~~~~~~~
+src/StackMonitor.c:25:2: error: conflicting types for 'GetFreeBytes'; have 'int(void)'
+In file included from src/StackMonitor.c:8:
+src/StackMonitor.h:16:10: note: previous declaration of 'GetFreeBytes' with type 'uint32_t(void)' {aka 'long unsigned int(void)'}
+   16 | uint32_t GetFreeBytes(void);
+      |          ^~~~~~~~~~~~
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:35:14: error: 'uint32_' undeclared (first use in this function); did you mean 'uint32_t'?
+   35 |     return ((uint32_*)end - (uint32_t*)p);
+      |              ^~~~~~~
+      |              uint32_t
+src/StackMonitor.c:35:14: note: each undeclared identifier is reported only once for each function it appears in
+src/StackMonitor.c:35:22: error: expected expression before ')' token
+   35 |     return ((uint32_*)end - (uint32_t*)p);
+      |                      ^
+src/StackMonitor.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+   36 | }
+      | ^
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:19:35 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:35:14: error: 'uint32_' undeclared (first use in this function); did you mean 'uint32_t'?
+   35 |     return ((uint32_*)end - (uint32_t*)p);
+      |              ^~~~~~~
+      |              uint32_t
+src/StackMonitor.c:35:14: note: each undeclared identifier is reported only once for each function it appears in
+src/StackMonitor.c:35:22: error: expected expression before ')' token
+   35 |     return ((uint32_*)end - (uint32_t*)p);
+      |                      ^
+src/StackMonitor.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+   36 | }
+      | ^
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:19:47 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+16:19:58 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:05 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:09 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:21 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:29 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:21:19 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:22:03 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:23:43 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:05 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:36 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:36:46 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  AS      vectors.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: obj/vectors.o:(.isr_vector+0x4): undefined reference to `Reset_Handlers'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:171: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:36:53 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      vectors.o
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+16:36:56 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:41:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:80:13: warning: unused variable 'left' [-Wunused-variable]
+   80 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:79:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   79 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:77:12: warning: unused variable 'free_bytes' [-Wunused-variable]
+   77 |     size_t free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+16:41:59 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:06 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+16:43:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:47:24 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+16:47:38 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:48:39 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:49:13 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+16:49:21 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:02 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:51:36 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:31:14: warning: unused variable 'test' [-Wunused-variable]
+   31 |     uint32_t test = *p;
+      |              ^~~~
+  LD      app.elf
+  OBJCOPY app.bin
+16:54:49 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:54:53 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:33 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: build/app.elf section `.stack' will not fit in region `RAM'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: region `RAM' overflowed by 536822264 bytes
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:171: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:57:44 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:33:14: warning: unused variable 'test' [-Wunused-variable]
+   33 |     uint32_t test = *p;
+      |              ^~~~
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: build/app.elf section `.stack' will not fit in region `RAM'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: region `RAM' overflowed by 536822264 bytes
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:171: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:58:10 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+  OBJCOPY app.bin
+16:58:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:58:53 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:33:30: error: 'STACK_PATTERN' undeclared (first use in this function)
+   33 |     while (p >= low && *p == STACK_PATTERN) {
+      |                              ^~~~~~~~~~~~~
+src/StackMonitor.c:33:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:59:08 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c: In function 'GetFreeBytes':
+src/StackMonitor.c:33:30: error: 'STACK_PATTERN' undeclared (first use in this function)
+   33 |     while (p >= low && *p == STACK_PATTERN) {
+      |                              ^~~~~~~~~~~~~
+src/StackMonitor.c:33:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:59:15 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: build/app.elf section `.stack' will not fit in region `RAM'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: region `RAM' overflowed by 536822264 bytes
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:171: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:59:23 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+  OBJCOPY app.bin
+16:59:28 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:59:32 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+16:59:54 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:04:41 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:04:45 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:06:10 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:17 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:08:00 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: build/app.elf section `.heap' will not fit in region `RAM'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: region `RAM' overflowed by 536887800 bytes
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:171: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:08:06 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: build/app.elf section `.heap' will not fit in region `RAM'
+/home/kali/Tools/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/bin/ld: region `RAM' overflowed by 536887800 bytes
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:171: build/app.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:08:17 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:08:19 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:10:01 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:10:24 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:10:28 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:10:30 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:10:53 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:10:56 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:41 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:44 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:51 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:59 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:21 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:12:23 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:26 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:30 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:49 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:13:51 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:56 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:36 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:48 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:56 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:58 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:35 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:15:38 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:03 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:54 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:00 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:45 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:58 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:53 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:18:58 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:19:14 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:19:50 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:19:57 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:23:23 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:26:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:27:51 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:27:56 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:46 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:29:48 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:48 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:30:54 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:32:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+17:32:16 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:32:28 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:33:47 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:41:18 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+17:41:24 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:41:53 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:42:30 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:43:14 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+17:43:18 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:44:11 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:46:48 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c: In function 'getUsedBytes':
+src/StackMonitor.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+   45 | }
+      | ^
+  LD      app.elf
+  OBJCOPY app.bin
+17:46:56 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:47:28 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:48:51 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:80:12: error: redefinition of 'free_bytes'
+   80 |     size_t free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~
+src/main.c:66:12: note: previous definition of 'free_bytes' with type 'size_t' {aka 'unsigned int'}
+   66 |     size_t free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~
+src/main.c:83:13: warning: unused variable 'left' [-Wunused-variable]
+   83 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:82:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   82 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:80:12: warning: unused variable 'free_bytes' [-Wunused-variable]
+   80 |     size_t free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~
+make: *** [Makefile:163: obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:49:24 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:83:13: warning: unused variable 'left' [-Wunused-variable]
+   83 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:82:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   82 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:80:12: warning: unused variable 'after_free_bytes' [-Wunused-variable]
+   80 |     size_t after_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~
+src/main.c:66:12: warning: unused variable 'before_free_bytes' [-Wunused-variable]
+   66 |     size_t before_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~~
+  LD      app.elf
+  OBJCOPY app.bin
+17:49:31 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+17:51:12 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c: In function 'getUsedBytes':
+src/StackMonitor.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+   47 | }
+      | ^
+  LD      app.elf
+  OBJCOPY app.bin
+17:51:20 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        04:19:43 **** Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+04:26:18 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:83:13: warning: unused variable 'left' [-Wunused-variable]
+   83 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:82:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   82 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:80:12: warning: unused variable 'after_free_bytes' [-Wunused-variable]
+   80 |     size_t after_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~
+src/main.c:66:12: warning: unused variable 'before_free_bytes' [-Wunused-variable]
+   66 |     size_t before_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~~
+  CC      StackMonitor.o
+src/StackMonitor.c:27:10: error: conflicting types for 'GetFreeBytes'; have 'uint32_t(void)' {aka 'long unsigned int(void)'}
+   27 | uint32_t GetFreeBytes(void)
+      |          ^~~~~~~~~~~~
+In file included from src/StackMonitor.c:8:
+src/StackMonitor.h:16:8: note: previous declaration of 'GetFreeBytes' with type 'size_t(void)' {aka 'unsigned int(void)'}
+   16 | size_t GetFreeBytes(void);
+      |        ^~~~~~~~~~~~
+src/StackMonitor.c:42:10: error: conflicting types for 'GetUsedBytes'; have 'uint32_t(void)' {aka 'long unsigned int(void)'}
+   42 | uint32_t GetUsedBytes(void)
+      |          ^~~~~~~~~~~~
+src/StackMonitor.h:18:8: note: previous declaration of 'GetUsedBytes' with type 'size_t(void)' {aka 'unsigned int(void)'}
+   18 | size_t GetUsedBytes(void);
+      |        ^~~~~~~~~~~~
+src/StackMonitor.c: In function 'isCorrupted':
+src/StackMonitor.c:67:14: warning: comparison between pointer and integer
+   67 |         if(p == MARKER)
+      |              ^~
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:26:29 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+src/StackMonitor.c:27:10: error: conflicting types for 'GetFreeBytes'; have 'uint32_t(void)' {aka 'long unsigned int(void)'}
+   27 | uint32_t GetFreeBytes(void)
+      |          ^~~~~~~~~~~~
+In file included from src/StackMonitor.c:8:
+src/StackMonitor.h:16:8: note: previous declaration of 'GetFreeBytes' with type 'size_t(void)' {aka 'unsigned int(void)'}
+   16 | size_t GetFreeBytes(void);
+      |        ^~~~~~~~~~~~
+src/StackMonitor.c:42:10: error: conflicting types for 'GetUsedBytes'; have 'uint32_t(void)' {aka 'long unsigned int(void)'}
+   42 | uint32_t GetUsedBytes(void)
+      |          ^~~~~~~~~~~~
+src/StackMonitor.h:18:8: note: previous declaration of 'GetUsedBytes' with type 'size_t(void)' {aka 'unsigned int(void)'}
+   18 | size_t GetUsedBytes(void);
+      |        ^~~~~~~~~~~~
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:27:22 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:83:13: warning: unused variable 'left' [-Wunused-variable]
+   83 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:82:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   82 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:80:12: warning: unused variable 'after_free_bytes' [-Wunused-variable]
+   80 |     size_t after_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~
+src/main.c:66:12: warning: unused variable 'before_free_bytes' [-Wunused-variable]
+   66 |     size_t before_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~~
+  CC      StackMonitor.o
+src/StackMonitor.c:59:9: error: conflicting types for 'GetUsage'; have 'uint8_t(void)' {aka 'unsigned char(void)'}
+   59 | uint8_t GetUsage(void)
+      |         ^~~~~~~~
+In file included from src/StackMonitor.c:8:
+src/StackMonitor.h:20:10: note: previous declaration of 'GetUsage' with type 'uint32_t(void)' {aka 'long unsigned int(void)'}
+   20 | uint32_t GetUsage(void);
+      |          ^~~~~~~~
+make: *** [Makefile:163: obj/StackMonitor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:28:02 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'GetUsage':
+src/main.c:50:16: error: storage class specified for parameter 'initializePeripherals'
+   50 | static int32_t initializePeripherals();
+      |                ^~~~~~~~~~~~~~~~~~~~~
+src/main.c:54:18: error: storage class specified for parameter 'gScheduler'
+   54 | static Scheduler gScheduler;            // Global Scheduler instance
+      |                  ^~~~~~~~~~
+src/main.c:64:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   64 | {
+      | ^
+src/main.c:101:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  101 | {
+      | ^
+In file included from src/main.c:37:
+src/StackMonitor.h:22:9: error: old-style parameter declarations in prototyped function definition
+   22 | uint8_t GetUsage(void)
+      |         ^~~~~~~~
+src/main.c:118: error: expected '{' at end of input
+src/main.c:118: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [Makefile:163: obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:28:05 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:83:13: warning: unused variable 'left' [-Wunused-variable]
+   83 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:82:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   82 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:80:12: warning: unused variable 'after_free_bytes' [-Wunused-variable]
+   80 |     size_t after_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~
+src/main.c:66:12: warning: unused variable 'before_free_bytes' [-Wunused-variable]
+   66 |     size_t before_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~~
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+04:28:33 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+04:30:11 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:86:13: warning: unused variable 'left' [-Wunused-variable]
+   86 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:85:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   85 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:83:10: warning: unused variable 'corrupted' [-Wunused-variable]
+   83 |     bool corrupted = isCorrupted();
+      |          ^~~~~~~~~
+src/main.c:81:12: warning: unused variable 'after_free_bytes' [-Wunused-variable]
+   81 |     size_t after_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~
+src/main.c:67:12: warning: unused variable 'before_free_bytes' [-Wunused-variable]
+   67 |     size_t before_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~~
+  LD      app.elf
+  OBJCOPY app.bin
+04:30:17 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+04:30:29 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.

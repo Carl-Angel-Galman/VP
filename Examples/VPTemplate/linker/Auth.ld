@@ -45,12 +45,13 @@ MEMORY
 /* Symbols used for memory management
  * This includes the stack and also a possible heap memory
  */
-_size_of_stack = 0x200;                             /* Size of stack in bytes */
+_size_of_stack = 4K; 
 _size_of_heap  = 0x0;                               /* Size of heap in bytes */
 
 /* Highest usable address of the RAM. */
 _end_of_ram = ORIGIN(RAM) + LENGTH(RAM) - 4;        /* End of RAM */
-_initial_stack_pointer = _end_of_ram;               /* Set the symbol for initial stack pointer */
+
+_stack_start_addr = 0x20014000; /* Vorgegebene Startadresse */                          
 
 /***** SECTIONS **************************************************************/
 
@@ -136,6 +137,14 @@ SECTIONS
     . = ALIGN(4);
 
      _end_of_heap = .;
+  } >RAM
+  
+	.stack (NOLOAD) :
+  {
+    . = ALIGN(8);
+    _estack = .;       /* Untergrenze (Start der Sektion) */
+    . = . + _size_of_stack;
+    _sstack = .;       /* Obergrenze (Ende der Sektion) */
   } >RAM
 
   /* Remove information from the standard libraries */

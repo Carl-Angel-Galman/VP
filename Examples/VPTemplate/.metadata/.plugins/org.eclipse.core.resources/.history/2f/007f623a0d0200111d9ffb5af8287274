@@ -1,0 +1,35 @@
+/*
+ * StackMonitor.c
+ *
+ *  Created on: Feb 4, 2026
+ *      Author: kali
+ */
+
+#include "StackMonitor.h"
+
+
+extern uint32_t _estack;
+
+extern uint32_t _sstack;
+
+extern uint32_t _initial_stack_pointer;
+
+#define ENDMARKER 0xEA1DADAB
+
+#define MARKER 0xDEC0ADDE
+
+
+
+
+size_t GetFreeBytes(void)
+{
+    uint32_t *p = stack_low();
+    uint32_t *end = stack_high();
+
+    while (p < end && *p == STACK_PATTERN) {
+        p++;
+    }
+
+    // p zeigt auf erstes überschriebenes Word
+    return (size_t)((uint8_t*)end - (uint8_t*)p);
+}

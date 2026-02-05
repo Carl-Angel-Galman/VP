@@ -1,0 +1,39 @@
+/*
+ * StackMonitor.c
+ *
+ *  Created on: Feb 4, 2026
+ *      Author: kali
+ */
+
+#include "StackMonitor.h"
+
+
+extern uint32_t _estack;
+
+extern uint32_t _sstack;
+
+extern uint32_t _initial_stack_pointer;
+
+#define ENDMARKER 0xEA1DADAB
+
+#define MARKER 0xDEC0ADDE
+
+
+
+
+#include "Util/Global.h"
+size_t GetFreeBytes(void)
+{
+    uint32_t *p = &_estack;
+
+    uint32_t *end = &_sstack;
+
+    uint32_t counter = 0;
+
+    while (p < end && *p == MARKER) {
+        p++;
+        counter++;
+    }
+
+    return ((uint32_t*)end - (uint32_t*)p);
+}

@@ -59,20 +59,43 @@ Reset_Handler:
     str  r3, [r2]
     adds r2, r2, #4
 
+/* ... (Anfang bis .loopFillZerobss bleibt gleich) ... */
+
 .loopFillZerobss:
     cmp r2, r4
     bcc .fillZerobss
 
-    /* Initialize the Stack-Pointer */
-    /* Load address of initial_stack_pointer into R0 for. Symbol defined in Linker Script */
-    ldr r0, =_initial_stack_pointer
-    /* Set stack pointer */
-    mov   sp, r0
+    /* --- START STACK MONITOR INITIALIZATION --- */
+    /* Füllen des Bereichs von _sstack bis _estack mit dem Muster */
+    ldr r0, =_sstack             /* Startadresse laden */
+    ldr r1, =_estack             /* Endadresse laden */
+    ldr r2, = STACK_MAGIC_PATTERN          /* Magic Pattern (Assembler nutzt Literal Pool) */
+    b .loopFillStack
 
-    /* Call the clock system intitialization function.*/
+.fillStack:
+    str  r2, [r0]                /* Wort (4 Byte) in RAM schreiben */
+    adds r0, r0, #4              /* Adresse um 4 erhöhen */
+
+.loopFillStack:
+    cmp r0, r1                   /* Grenze erreicht? */
+    bcc .fillStack               /* Wenn r0 < r1, weiter füllen */
+    /* --- END STACK MONITOR INITIALIZATION --- */
+
+    /* Initialize the Stack-Pointer */
+    /* Setzen des SP auf die höchste Adresse (_estack) */
+    ldr r0, =_estack
+    mov sp, r0
+
+    /* Call the clock system initialization function.*/
     bl  SystemInit
 
     /* Call the application's entry point.*/
     bl main
     bx lr
+
+/* Definition der Konstante am Ende des Codes */
+.align 4
+STACK_MAGIC_PATTERN:
+    .word 0xDEADBEEF
+/* Ende des Reset_Handlers */
 .size Reset_Handler, .-Reset_Handler

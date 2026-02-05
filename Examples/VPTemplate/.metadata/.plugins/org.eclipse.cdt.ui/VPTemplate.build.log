@@ -1,0 +1,6 @@
+04:30:29 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+
+04:30:29 Build Finished. 0 errors, 0 warnings. (took 166ms)
+

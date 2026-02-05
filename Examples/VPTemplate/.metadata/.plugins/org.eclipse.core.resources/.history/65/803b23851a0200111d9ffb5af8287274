@@ -1,0 +1,44 @@
+/*
+ * StackMonitor.c
+ *
+ *  Created on: Feb 4, 2026
+ *      Author: kali
+ */
+
+#include "StackMonitor.h"
+
+
+extern uint32_t _estack;
+
+extern uint32_t _sstack;
+
+#define ENDMARKER 0xEA1DADAB
+
+#define MARKER 0xDEC0ADDEu
+
+
+
+
+#include "Util/Global.h"
+
+
+size_t GetFreeBytes(void)
+{
+    uint32_t *low  = &_sstack;
+    uint32_t *high = &_estack;
+
+    // Start bei letztem gültigen Word innerhalb des Stackbereichs
+    uint32_t *p = high - 1;
+
+    while (p >= low && *p == MARKER) {
+        // Wenn p==low ist, wäre p-- danach unter low → daher Abbruch nach Zählung
+        if (p == low) {
+            return (size_t)((uint8_t*)high - (uint8_t*)low); // alles frei
+        }
+        p--;
+    }
+
+    // p zeigt jetzt auf erstes "benutztes" Word von oben gesehen,
+    // freie Bytes sind Bereich oberhalb davon
+    return (size_t)((uint8_t*)high - (uint8_t*)(p + 1));
+}
