@@ -28,6 +28,16 @@
  *
  * @retval : None
  */
+  .align 4
+  MARKER:
+ 	.word 0xDEC0ADDE 
+ 	 /*DEADC0DE written in Little Endian  */
+ 	 
+ENDMARKER:
+	.word 0xEA1DADAB
+	/*ABAD1DEA written in Little Endian*/
+ 	
+ 
 .section .text.Reset_Handler
 .type Reset_Handler, %function
 .global Reset_Handler
@@ -64,6 +74,27 @@ Reset_Handler:
 .loopFillZerobss:
     cmp r2, r4
     bcc .fillZerobss
+    
+     
+    ldr r2, =_end_of_stack
+    ldr r4, =_start_of_stack
+    ldr r3, = MARKER
+    ldr r3, [r3]
+    b .loopFillStack
+    
+/*Fill the stack with the MARKER*/
+.fillStack:
+    str  r3, [r2]
+    adds r2, r2, #4
+
+.loopFillStack:
+    cmp r2, r4
+    bcc .fillStack
+    
+    /*Overwrite the last address  of the stack*/
+    ldr r3, =ENDMARKER
+    ldr r3, [r3]
+    str r3, [r2]
 
     /* --- START STACK MONITOR INITIALIZATION --- */
     /* Füllen des Bereichs von _sstack bis _estack mit dem Muster */
