@@ -62,8 +62,8 @@ uint8_t GetUsage(void)
 
 bool isCorrupted(void)
 {
-	uint32_t* p = &_sstack;
-	if(*p == MARKER)
+	uint32_t* p = &_estack;
+	if(*p == ENDMARKER)
 	{
 		return false;
 	}
