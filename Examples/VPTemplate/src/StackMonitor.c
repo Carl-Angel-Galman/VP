@@ -1,45 +1,72 @@
 /*
  * StackMonitor.c
  *
- *  Created on: Feb 3, 2026
+ *  Created on: Feb 4, 2026
  *      Author: kali
  */
 
-
-
-
 #include "StackMonitor.h"
-#include "System.h" // Für State Machine Definitionen
 
-// Symbols from the Linker Script
-extern uint32_t _sstack;
+#include "stdbool.h"
+
+#include "Util/Global.h"
+
+
 extern uint32_t _estack;
 
-#define STACK_MAGIC_PATTERN 0xDEADBEEF
+extern uint32_t _sstack;
 
-void StackMonitor_Check(void) {
-    uint32_t *canaryPtr = (uint32_t*)&_sstack;
+#define ENDMARKER 0xEA1DADAB
 
-    //check if the
-    if (*canaryPtr != STACK_MAGIC_PATTERN) {
+#define MARKER 0xdec0adde
+
+#define STACK_SIZE 0x1000
 
 
-        Error_Handler();
+uint32_t GetFreeBytes(void)
+{
+    uint32_t *p  = &_sstack;
+    uint32_t *high = &_estack;
+
+    uint32_t byte_counter = 0;
+
+    while (p < high && *p == MARKER) {
+        p++;
+        byte_counter++;
     }
+
+    return byte_counter;
 }
 
-uint32_t StackMonitor_GetUsage(void) {
-    uint32_t *searchPtr = (uint32_t*)&_sstack;
-    uint32_t freeBytes = 0;
+uint32_t GetUsedBytes(void)
+{
+	uint32_t *p  = &_sstack;
+	uint32_t *high = &_estack;
 
-    /* 2. High-Watermark Berechnung */
-    /* Suche von unten nach oben, wie viele Muster noch unberührt sind */
-    while (searchPtr < (uint32_t*)&_estack && *searchPtr == STACK_MAGIC_PATTERN) {
-        freeBytes += 4;
-        searchPtr++;
-    }
+	uint32_t byte_counter = 0;
 
-    /* Rückgabe des verbrauchten Speichers in Byte (Integer-Arithmetik) */
-    uint32_t totalSize = (uint32_t)&_estack - (uint32_t)&_sstack;
-    return (totalSize - freeBytes);
+	while (p < high && *p == MARKER) {
+		p++;
+		byte_counter++;
+}
+
+	  return STACK_SIZE - byte_counter;
+
+}
+
+uint8_t GetUsage(void)
+{
+
+	return GetUsedBytes() >> 12;
+}
+
+bool isCorrupted(void)
+{
+	uint32_t* p = &_sstack;
+	if(*p == MARKER)
+	{
+		return false;
+	}
+	return true;
+
 }
