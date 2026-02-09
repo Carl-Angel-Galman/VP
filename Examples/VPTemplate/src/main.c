@@ -34,8 +34,9 @@
 
 #include "GlobalObjects.h"
 
-//#include "StackMonitor.h"
+#include "StackMonitor.h"
 
+#include "stdbool.h"
 
 /***** PRIVATE CONSTANTS *****************************************************/
 
@@ -56,43 +57,15 @@ static Scheduler gScheduler;            // Global Scheduler instance
 
 /***** PUBLIC FUNCTIONS ******************************************************/
 
-extern uint32_t _sstack;
-extern uint32_t _estack;
-
-#define STACK_MAGIC_PATTERN 0xDEADBEEF
-
-void StackMonitor_Check(void) {
-    uint32_t *canaryPtr = (uint32_t*)&_sstack;
-
-    //check if the
-    if (*canaryPtr != STACK_MAGIC_PATTERN) {
-
-
-        Error_Handler();
-    }
-}
-
-uint32_t StackMonitor_GetUsage(void) {
-    uint32_t *searchPtr = (uint32_t*)&_sstack;
-    uint32_t freeBytes = 0;
-
-    /* 2. High-Watermark Berechnung */
-    /* Suche von unten nach oben, wie viele Muster noch unberührt sind */
-    while (searchPtr < (uint32_t*)&_estack && *searchPtr == STACK_MAGIC_PATTERN) {
-        freeBytes += 4;
-        searchPtr++;
-    }
-
-    /* Rückgabe des verbrauchten Speichers in Byte (Integer-Arithmetik) */
-    uint32_t totalSize = (uint32_t)&_estack - (uint32_t)&_sstack;
-    return (totalSize - freeBytes);
-}
 
 /**
  * @brief Main function of System
  */
 int main(void)
 {
+
+    size_t before_free_bytes = GetFreeBytes();
+
     // Initialize the HAL
     HAL_Init();
 
@@ -105,16 +78,18 @@ int main(void)
     // Initialize Scheduler
     schedInitialize(&gScheduler);
 
+    size_t after_free_bytes = GetFreeBytes();
+
+    bool corrupted = isCorrupted();
+
     int globalCounter = 0;
     uint8_t left = 0;
 
-    StackMonitor_Check();
-
     while (1)
     {
-        // Read to buttons
 
     }
+
 }
 
 /***** PRIVATE FUNCTIONS *****************************************************/
