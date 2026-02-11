@@ -1,17 +1,30 @@
 /*
  * StackMonitor.h
  *
- *  Created on: Feb 3, 2026
+ *  Created on: Feb 4, 2026
  *      Author: kali
  */
 
 #ifndef SRC_STACKMONITOR_H_
 #define SRC_STACKMONITOR_H_
 
+#include "stm32g4xx_hal.h"
+
+#include "Util/Global.h"
+
+#include "stdbool.h"
 
 
-void StackMonitor_Check(void) ;
+uint32_t GetFreeBytes(void);
 
-uint32_t StackMonitor_GetUsage(void) ;
+uint32_t GetUsedBytes(void);
+
+uint8_t GetUsage(void);
+
+
+bool isCorrupted(void);
+
+
+
 
 #endif /* SRC_STACKMONITOR_H_ */
