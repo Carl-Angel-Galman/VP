@@ -1,0 +1,18 @@
+/*
+ * GasSensor.h
+ *
+ *  Created on: Feb 10, 2026
+ *      Author: kali
+ */
+
+#ifndef SRC_SERVICE_GASSENSOR_H_
+#define SRC_SERVICE_GASSENSOR_H_
+
+typedef struct _GasSensor
+{
+	uin32_t sensorVoltage;
+} GasSensor;
+
+
+
+#endif /* SRC_SERVICE_GASSENSOR_H_ */

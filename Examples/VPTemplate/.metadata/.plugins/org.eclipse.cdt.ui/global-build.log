@@ -1541,3 +1541,92 @@ make: Nothing to be done for 'all'.
 04:39:37 **** Incremental Build of configuration Default for project VPTemplate ****
 make all 
 make: Nothing to be done for 'all'.
+06:21:26 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+06:21:34 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+06:40:17 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:86:13: warning: unused variable 'left' [-Wunused-variable]
+   86 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:85:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   85 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:83:10: warning: unused variable 'corrupted' [-Wunused-variable]
+   83 |     bool corrupted = isCorrupted();
+      |          ^~~~~~~~~
+src/main.c:81:12: warning: unused variable 'after_free_bytes' [-Wunused-variable]
+   81 |     size_t after_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~
+src/main.c:67:12: warning: unused variable 'before_free_bytes' [-Wunused-variable]
+   67 |     size_t before_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~~
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+06:40:39 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+06:40:46 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+06:42:58 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+06:43:02 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+06:45:27 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin
+06:45:31 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+make: Nothing to be done for 'all'.
+07:02:18 **** Incremental Build of configuration Default for project VPTemplate ****
+make all 
+  AS      startup.o
+src/startup.s: Assembler messages:
+src/startup.s: Warning: end of file not at end of a line; newline inserted
+  CC      main.o
+src/main.c: In function 'main':
+src/main.c:86:13: warning: unused variable 'left' [-Wunused-variable]
+   86 |     uint8_t left = 0;
+      |             ^~~~
+src/main.c:85:9: warning: unused variable 'globalCounter' [-Wunused-variable]
+   85 |     int globalCounter = 0;
+      |         ^~~~~~~~~~~~~
+src/main.c:83:10: warning: unused variable 'corrupted' [-Wunused-variable]
+   83 |     bool corrupted = isCorrupted();
+      |          ^~~~~~~~~
+src/main.c:81:12: warning: unused variable 'after_free_bytes' [-Wunused-variable]
+   81 |     size_t after_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~
+src/main.c:67:12: warning: unused variable 'before_free_bytes' [-Wunused-variable]
+   67 |     size_t before_free_bytes = GetFreeBytes();
+      |            ^~~~~~~~~~~~~~~~~
+  CC      StackMonitor.o
+  LD      app.elf
+  OBJCOPY app.bin
+  LD      auth.elf
+  OBJCOPY auth.bin

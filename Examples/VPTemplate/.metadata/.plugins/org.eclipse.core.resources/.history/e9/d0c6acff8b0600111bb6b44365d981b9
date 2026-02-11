@@ -1,0 +1,14 @@
+/*
+ * GasSensor.c
+ *
+ *  Created on: Feb 10, 2026
+ *      Author: kali
+ */
+
+
+#include "GasSensor.h"
+
+void gasSensorInitialize(GasSensor* pSensor)
+{
+	_assert(pSensor != null);
+}

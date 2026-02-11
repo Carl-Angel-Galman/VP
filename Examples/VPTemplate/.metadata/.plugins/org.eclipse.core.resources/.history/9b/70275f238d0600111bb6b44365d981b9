@@ -1,0 +1,35 @@
+/*
+ * GasSensor.c
+ *
+ *  Created on: Feb 10, 2026
+ *      Author: kali
+ */
+
+
+#include "GasSensor.h"
+
+int32_t gasSensorInitialize(GasSensor* pSensor, uint32_t convFactor)
+{
+
+	if(pSensor == 0)
+	{
+		return SENSOR_INVALID_PTR;
+	}
+
+	pSensor->sensorVoltage = 0;
+	pSensor->conversionFactor = convFactor;
+
+	return SENSOR_OK;
+}
+
+int32_t gasSensorSetSensorVoltage(GasSensor* pSensor, uint32_t sensorVoltage)
+{
+
+	if(pSensor == 0)
+	{
+		return SENSOR_INVALID_PTR;
+
+	}
+
+	return SENSOR_OK;
+}
